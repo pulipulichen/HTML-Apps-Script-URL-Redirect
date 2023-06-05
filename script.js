@@ -6,6 +6,7 @@ var params = new URLSearchParams(new URL(currentURL).search);
 
 // Get the value of the "cell" parameter
 var cellValue = params.get("cell");
+// cellValue = 'A1'
 
 // Print the value
 if (cellValue) {
