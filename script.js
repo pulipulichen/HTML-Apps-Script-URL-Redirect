@@ -10,7 +10,7 @@ var cellValue = params.get("cell");
 // Print the value
 if (cellValue) {
   let apiURL = 'https://script.google.com/macros/s/AKfycbyemCrwxJ8FqhJzcTwf6OWCqBofEvXHeHB3X9sC7liAtnxrS1H2P2ktOIkaFp0CipKXMQ/exec'
-  fetch(`$apiURL?cell=${cellValue}`)
+  fetch(`${apiURL}?cell=${cellValue}`)
     .then(response => response.text())
     .then(data => {
       // console.log(data); // Process the raw text data
