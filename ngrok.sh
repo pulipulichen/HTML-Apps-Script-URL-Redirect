@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 30
 /usr/local/bin/ngrok http $PORT --log=stdout > /tmp/ngrok.log &
 sleep 3
 file_content=$(cat /tmp/ngrok.log)
